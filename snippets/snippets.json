@@ -54,5 +54,41 @@
 			"[[// $1]]"
 		],
 		"description": "comment"
+	},
+	// Kotlin
+	"ktmain": {
+		"prefix": "ktmain",
+		"body": [
+			"main[[t]]"
+		],
+		"description": "comment"
+	},
+	"ktfun0": {
+		"prefix": "ktfun0",
+		"body": [
+			"fun[[b]] $1() {[[e]][[b]]"
+		],
+		"description": "ktfun0"
+	},
+	"ktfun0r": {
+		"prefix": "ktfun0r",
+		"body": [
+			"fun[[b]] $1()[[b]]: $2 {[[e]][[b]]"
+		],
+		"description": "ktfun0r"
+	},
+	"ktfun1": {
+		"prefix": "ktfun1",
+		"body": [
+			"fun[[b]] $1($2: $3) {[[e]][[b]]"
+		],
+		"description": "ktfun1"
+	},
+	"ktfun1r": {
+		"prefix": "ktfun1r",
+		"body": [
+			"fun[[b]] $1($2: $3): $4 {[[e]][[b]]"
+		],
+		"description": "ktfun1r"
 	}
 }
