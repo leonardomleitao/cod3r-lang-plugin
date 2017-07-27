@@ -2,8 +2,9 @@
     "name": "cod3r",
     "displayName": "cod3r",
     "description": "cod3r language",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "leonardomleitao",
+    "icon": "icon.png", 
     "engines": {
         "vscode": "^1.14.0"
     },
@@ -11,21 +12,31 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "cod3r",
-            "aliases": ["Cod3r"],
-            "extensions": [".c3r"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "cod3r",
-            "scopeName": "source.c3r",
-            "path": "./syntaxes/cod3r.tmLanguage.json"
-        }],
-        "snippets": [{
-            "language": "cod3r",
-            "scopeName": "source.c3r",
-            "path": "./snippets/snippets.json"
-        }]
+        "languages": [
+            {
+                "id": "cod3r",
+                "aliases": [
+                    "Cod3r"
+                ],
+                "extensions": [
+                    ".c3r"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cod3r",
+                "scopeName": "source.c3r",
+                "path": "./syntaxes/cod3r.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "cod3r",
+                "scopeName": "source.c3r",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     }
 }
