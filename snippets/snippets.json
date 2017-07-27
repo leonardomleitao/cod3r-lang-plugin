@@ -1,0 +1,58 @@
+{
+	"Break": {
+		"prefix": "b",
+		"body": [
+			"[[b]]"
+		],
+		"description": "Break"
+	},
+	"Enter": {
+		"prefix": "e",
+		"body": [
+			"[[e]]"
+		],
+		"description": "Enter"
+	},
+	"2Enter": {
+		"prefix": "ee",
+		"body": [
+			"[[2e]]"
+		],
+		"description": "2Enter"
+	},
+	"BreakEnter": {
+		"prefix": "be",
+		"body": [
+			"[[b]][[e]]"
+		],
+		"description": "BreakEnter"
+	},
+	"Break2Enter": {
+		"prefix": "b2e",
+		"body": [
+			"[[b]][[2e]]"
+		],
+		"description": "Break2Enter"
+	},
+	"EnterBreak": {
+		"prefix": "eb",
+		"body": [
+			"[[e]][[b]]"
+		],
+		"description": "EnterBreak"
+	},
+	"startHere": {
+		"prefix": "startHere",
+		"body": [
+			"[[startHere]]"
+		],
+		"description": "startHere"
+	},
+	"comment": {
+		"prefix": "//",
+		"body": [
+			"[[// $1]]"
+		],
+		"description": "comment"
+	}
+}

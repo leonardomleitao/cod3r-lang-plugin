@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cod3r",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cod3r",
+				"match": "\\[\\[\\w+\\]\\]"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.block.documentation.cod3r",
+				"begin": "\\[\\[\\/\\/",
+				"end": "\\]\\]"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cod3r",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cod3r",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.c3r"
+}

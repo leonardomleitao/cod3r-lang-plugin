@@ -1,0 +1,31 @@
+{
+    "name": "cod3r",
+    "displayName": "cod3r",
+    "description": "cod3r language",
+    "version": "0.0.1",
+    "publisher": "leonardomleitao",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cod3r",
+            "aliases": ["Cod3r"],
+            "extensions": [".c3r"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cod3r",
+            "scopeName": "source.c3r",
+            "path": "./syntaxes/cod3r.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "cod3r",
+            "scopeName": "source.c3r",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}
