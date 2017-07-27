@@ -56,39 +56,157 @@
 		"description": "comment"
 	},
 	// Kotlin
+	"ktval": {
+		"prefix": "ktval",
+		"body": [
+			"val ${1:name} = [[b]]${2:valor}[[b]]",
+			"$1"
+		],
+		"description": "ktval"
+	},
+	"ktval-type": {
+		"prefix": "ktval-type",
+		"body": [
+			"val ${1:name}: ${2:Type} = [[b]]${3:valor}[[b]]",
+			"$1"
+		],
+		"description": "ktval-type"
+	},
+	"ktvar": {
+		"prefix": "ktvar",
+		"body": [
+			"var ${1:name} = [[b]]${2:valor}[[b]]",
+			"$1"
+		],
+		"description": "ktvar"
+	},
+	"ktvar-type": {
+		"prefix": "ktvar-type",
+		"body": [
+			"var ${1:name}: ${2:Type} = [[b]]${3:valor}[[b]]",
+			"$1"
+		],
+		"description": "ktvar-type"
+	},
 	"ktmain": {
 		"prefix": "ktmain",
 		"body": [
-			"main[[t]]"
+			"main[[t]]",
+			"$0"
 		],
-		"description": "comment"
+		"description": "ktmain"
+	},
+	"ktreturn": {
+		"prefix": "ktreturn",
+		"body": [
+			"return [[b]]${1:valor}[[b]]$0"
+		],
+		"description": "ktreturn"
+	},
+	"ktreturn-next": {
+		"prefix": "ktreturn-next",
+		"body": [
+			"return [[b]]${1:valor}[[b]][[v]][[2e]]$0"
+		],
+		"description": "ktreturn-next"
+	},
+	"ktfunnext": {
+		"prefix": "ktfunnext",
+		"body": [
+			"[[v]][[2e]]"
+		],
+		"description": "ktfunnext"
+	},
+	"ktprint": {
+		"prefix": "ktprint",
+		"body": [
+			"print([[b]]${1:valor})[[b]]$0"
+		],
+		"description": "ktprint"
+	},
+	"ktprint-next": {
+		"prefix": "ktprint-next",
+		"body": [
+			"print([[b]]${1:valor})[[b]][[v]][[2e]]$0"
+		],
+		"description": "ktprint-next"
+	},
+	"ktprintln": {
+		"prefix": "ktprintln",
+		"body": [
+			"println([[b]]${1:valor})[[b]]$0"
+		],
+		"description": "ktprintln"
+	},
+	"ktprintln-next": {
+		"prefix": "ktprintln-next",
+		"body": [
+			"println([[b]]${1:valor})[[b]][[v]][[2e]]$0"
+		],
+		"description": "ktprintln-next"
 	},
 	"ktfun0": {
 		"prefix": "ktfun0",
 		"body": [
-			"fun[[b]] $1() {[[e]][[b]]"
+			"fun[[b]] ${1:name}([[b]]) {[[e]][[b]]",
+			"$0"
 		],
 		"description": "ktfun0"
 	},
-	"ktfun0r": {
-		"prefix": "ktfun0r",
+	"ktfun0-return": {
+		"prefix": "ktfun0-return",
 		"body": [
-			"fun[[b]] $1()[[b]]: $2 {[[e]][[b]]"
+			"fun[[b]] ${1:name}([[b]]): ${2:Type} {[[e]][[b]]",
+			"$0"
 		],
-		"description": "ktfun0r"
+		"description": "ktfun0-return"
 	},
 	"ktfun1": {
 		"prefix": "ktfun1",
 		"body": [
-			"fun[[b]] $1($2: $3) {[[e]][[b]]"
+			"fun[[b]] ${1:name}([[b]]${2:param}: ${3:Type}[[b]]) {[[e]][[b]]",
+			"$0"
 		],
 		"description": "ktfun1"
 	},
-	"ktfun1r": {
-		"prefix": "ktfun1r",
+	"ktfun1-return": {
+		"prefix": "ktfun1-return",
 		"body": [
-			"fun[[b]] $1($2: $3): $4 {[[e]][[b]]"
+			"fun[[b]] ${1:name}([[b]]${2:param}: ${3:Type}[[b]]): ${4:Type} {[[e]][[b]]",
+			"$0"
 		],
-		"description": "ktfun1r"
+		"description": "ktfun1-return"
+	},
+	"ktfun2": {
+		"prefix": "ktfun2",
+		"body": [
+			"fun[[b]] ${1:name}([[b]]${2:param}: ${3:Type}[[b]], ${3:param}: ${4:Type}[[b]]) {[[e]][[b]]",
+			"$0"
+		],
+		"description": "ktfun2"
+	},
+	"ktfun2-return": {
+		"prefix": "ktfun2-return",
+		"body": [
+			"fun[[b]] ${1:name}([[b]]${2:param}: ${3:Type}[[b]], ${4:param}: ${5:Type}[[b]]): ${6:Type} {[[e]][[b]]",
+			"$0"
+		],
+		"description": "ktfun2-return"
+	},
+	"ktfun3": {
+		"prefix": "ktfun3",
+		"body": [
+			"fun[[b]] ${1:name}([[b]]${2:param}: ${3:Type}[[b]], ${3:param}: ${4:Type}[[b]], ${5:param}: ${6:Type}[[b]]) {[[e]][[b]]",
+			"$0"
+		],
+		"description": "ktfun3"
+	},
+	"ktfun3-return": {
+		"prefix": "ktfun3-return",
+		"body": [
+			"fun[[b]] ${1:name}([[b]]${2:param}: ${3:Type}[[b]], ${4:param}: ${5:Type}[[b]], ${6:param}: ${7:Type}[[b]]): ${8:Type} {[[e]][[b]]",
+			"$0"
+		],
+		"description": "ktfun3-return"
 	}
 }
