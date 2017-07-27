@@ -59,32 +59,32 @@
 	"ktval": {
 		"prefix": "ktval",
 		"body": [
-			"val ${1:name} = [[b]]${2:valor}[[b]]",
-			"$1"
+			"val ${1:name} = [[b]]${2:valor}[[b]][[e]]",
+			"$0"
 		],
 		"description": "ktval"
 	},
 	"ktval-type": {
 		"prefix": "ktval-type",
 		"body": [
-			"val ${1:name}: ${2:Type} = [[b]]${3:valor}[[b]]",
-			"$1"
+			"val ${1:name}: ${2:Type} = [[b]]${3:valor}[[b]][[e]]",
+			"$0"
 		],
 		"description": "ktval-type"
 	},
 	"ktvar": {
 		"prefix": "ktvar",
 		"body": [
-			"var ${1:name} = [[b]]${2:valor}[[b]]",
-			"$1"
+			"var ${1:name} = [[b]]${2:valor}[[b]][[e]]",
+			"$0"
 		],
 		"description": "ktvar"
 	},
 	"ktvar-type": {
 		"prefix": "ktvar-type",
 		"body": [
-			"var ${1:name}: ${2:Type} = [[b]]${3:valor}[[b]]",
-			"$1"
+			"var ${1:name}: ${2:Type} = [[b]]${3:valor}[[b]][[e]]",
+			"$0"
 		],
 		"description": "ktvar-type"
 	},
@@ -120,7 +120,7 @@
 	"ktprint": {
 		"prefix": "ktprint",
 		"body": [
-			"print([[b]]${1:valor})[[b]]$0"
+			"print([[b]]${1:valor})[[b]][[e]]$0"
 		],
 		"description": "ktprint"
 	},
@@ -134,7 +134,7 @@
 	"ktprintln": {
 		"prefix": "ktprintln",
 		"body": [
-			"println([[b]]${1:valor})[[b]]$0"
+			"println([[b]]${1:valor})[[b]][[e]]$0"
 		],
 		"description": "ktprintln"
 	},
